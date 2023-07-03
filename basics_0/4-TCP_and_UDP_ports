@@ -1,0 +1,2 @@
+#!/bin/bash
+netstat -tunlp | awk 'NR > 2 && $NF ~ /^LISTEN/ {print $0}'
